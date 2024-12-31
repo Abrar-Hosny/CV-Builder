@@ -6,6 +6,7 @@ export default function Navbar() {
         <a>
         Content
         </a>
+        <br/>
         <a>Customize</a>
     </div>
   )
