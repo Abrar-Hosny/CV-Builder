@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLink } from "react-icons/fa";
-import { FaStarOfLife } from "react-icons/fa6";
+import { TbPointFilled } from "react-icons/tb";
 
 export default function ProjectSection() {
   return (
@@ -21,9 +21,11 @@ export default function ProjectSection() {
             <a className="font-medium">Project</a>
           </div>
         </div>
-        <div className="flex justify-between  text-sm italic ">
-          <h3>Bachelor of Science in Computer Science - GPA: 3.85 </h3>
-          <p>Alexandria, Egypt</p>
+        <div className="flex justify-between ml-5  mt-3 text-sm ">
+        <TbPointFilled className="mt-1" />
+        <p>Developed MembersOnly, a real-time web application, with session-based authentication leveraging Passport.js, which
+utilizes cookies to manage user sessions. it enables users to create new posts, fostering community interaction and content
+generation within the platform.</p>
         </div>
       </div>
     </div>

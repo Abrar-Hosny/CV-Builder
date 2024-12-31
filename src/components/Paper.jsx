@@ -21,7 +21,7 @@ export default function Paper() {
             Abrar Hosny{" "}
           </h1>
           <p className="text-sm text-center ">Alexandria, Egypt</p>
-          <div className="flex ">
+          <div className="flex justify-center">
             <div className="flex  items-center">
               <FaPhone className="mr-1" />
               <p className="mr-3">+201002531133</p>
