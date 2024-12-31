@@ -8,8 +8,8 @@ export default function ProjectSection() {
       <h2 className="font-bold">Projects</h2>
       <hr className="border border-black" />
       <div>
-        <div className="flex justify-between">
-          <h2 className="font-semibold mr-3 mt-3">
+        <div className="flex justify-between mt-3">
+          <h2 className="font-semibold mr-3 ">
             MembersOnly |{" "}
             <span className="text-sm italic font-normal">
               NextJS, NextUI, Aceternity, TypeScript, TailwindCSS, Socket.IO ,
