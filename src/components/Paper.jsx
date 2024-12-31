@@ -7,6 +7,7 @@ import { FaGithub } from "react-icons/fa";
 import { TfiWorld } from "react-icons/tfi";
 import PersonalInfo from "./PersonalInfo";
 import ProjectSection from "./ProjectSection";
+import TechnicalSkills from "./TechnicalSkills";
 
 
 export default function Paper() {
@@ -45,6 +46,7 @@ export default function Paper() {
           </div>
           <PersonalInfo />
 <ProjectSection/>
+<TechnicalSkills/>
         
         </a>
 
