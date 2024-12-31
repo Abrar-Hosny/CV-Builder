@@ -4,12 +4,12 @@ import { TbPointFilled } from "react-icons/tb";
 
 export default function ProjectSection() {
   return (
-    <div>
+    <div className="mt-3">
       <h2 className="font-bold">Projects</h2>
       <hr className="border border-black" />
       <div>
         <div className="flex justify-between">
-          <h2 className="font-semibold mr-3">
+          <h2 className="font-semibold mr-3 mt-3">
             MembersOnly |{" "}
             <span className="text-sm italic font-normal">
               NextJS, NextUI, Aceternity, TypeScript, TailwindCSS, Socket.IO ,
@@ -18,7 +18,7 @@ export default function ProjectSection() {
           </h2>
           <div className="flex items-center underline">
             <FaLink className="w-3 h-3 mr-1" />
-            <a className="font-medium">Project</a>
+            <a className="font-medium text-lg">Project Link</a>
           </div>
         </div>
         <div className="flex justify-between ml-5  mt-3 text-sm ">
