@@ -7,16 +7,20 @@ export default function TechnicalSkills() {
       <hr className="border border-black" />
       <div>
         <div className="flex">
-          <p className="font-bold">Languages: </p>{" "}
-          <span> HTML/CSS, JavaScript, Typescript, PHP, Java, Solidity</span>
+          <p>
+            <span className="font-bold">Languages:</span>
+            <span> HTML/CSS, JavaScript, Typescript, PHP, Java, Solidity</span>
+          </p>
         </div>
         <div className="flex">
-          <p className="font-bold">Technologies/Frameworks:</p>{" "}
-          <span>
-            Linux, Git, TailwindCSS, ReactJS, NextJS, NodeJS, ExpressJS,
-            MongoDB, Vite, WebPack, Vercel, EJS, Web3, Ganache, Flutter,
-            FireBase , Vercel , Railway , Socket.IO , PassportJS
-          </span>
+          <p>
+            <span className="font-bold">Technologies/Frameworks:</span>
+            <span clasName="font-light">
+              Linux, Git, TailwindCSS, ReactJS, NextJS, NodeJS, ExpressJS,
+              MongoDB, Vite, WebPack, Vercel, EJS, Web3, Ganache, Flutter,
+              FireBase , Vercel , Railway , Socket.IO , PassportJS
+            </span>
+          </p>
         </div>
       </div>
     </div>
