@@ -18,7 +18,7 @@ export default function ProjectSection() {
           </h2>
           <div className="flex items-center underline">
             <FaLink className="w-3 h-3 mr-1" />
-            <a className="font-medium text-lg">Project Link</a>
+            <a className="font-medium text-sm">Project Link</a>
           </div>
         </div>
         <div className="flex justify-between ml-5  mt-3 text-sm ">
