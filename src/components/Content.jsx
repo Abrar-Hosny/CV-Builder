@@ -19,6 +19,8 @@ export default function Content() {
     website: "https://abrarhosny.vercel.app/",
   });
 
+  const [education ,setEducation] = useState([{school:"Pharos University",degree:"Bachelor Degree",startDate:"2021-09-01",endDate:"2025-05-01",location:"Alexandria,Egypt"}])
+
   return (
     <>
       <div className="flex bg-gray-50">
