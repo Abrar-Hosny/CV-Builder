@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Paper from "./Paper";
 
 export default function Content() {
+const [name ,setName]=useState("Abrar Hosny")
+const handleNameChange = (event) => { 
+setName(event.target.value)
+
+}
+
+  
   return (
     <>
      <div className="flex bg-gray-50">
@@ -17,8 +24,10 @@ export default function Content() {
               Full Name
             </label>
             <input
-              type="email"
-              id="email"
+              type="text"
+              id="text"
+              value={name}
+              onChange={handleNameChange}
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2"
               placeholder="Abrar Hosny"
               required
@@ -275,7 +284,7 @@ export default function Content() {
           </div>
         </div>
       </div>
-      <Paper/>
+      <Paper personName={name}/>
      </div>
       
     </>
