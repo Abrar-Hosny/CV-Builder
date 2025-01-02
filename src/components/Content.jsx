@@ -3,12 +3,22 @@ import Paper from "./Paper";
 
 export default function Content() {
 const [name ,setName]=useState("Abrar Hosny")
+const [phone ,setPhone]=useState("+01002531133")
+const [location ,setLocation]=useState("Alexandria,Egypt")
+const [github ,setGithub]=useState("https://github.com/Abrar-Hosny")
+const [linkedin ,setLinkedin]=useState("in/abrar-mohamed-4a45932b1")
+const [website ,setWebsite]=useState("https://abrarhosny.vercel.app/")
+
 const handleNameChange = (event) => { 
   console.log(event.target.value);
 setName(event.target.value)
 console.log(name)
 
 }
+
+
+
+
 
   
   return (
