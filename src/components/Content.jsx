@@ -4,7 +4,9 @@ import Paper from "./Paper";
 export default function Content() {
 const [name ,setName]=useState("Abrar Hosny")
 const handleNameChange = (event) => { 
+  console.log(event.target.value);
 setName(event.target.value)
+console.log(name)
 
 }
 
