@@ -9,6 +9,15 @@ export default function Content() {
   const [github, setGithub] = useState("https://github.com/Abrar-Hosny");
   const [linkedin, setLinkedin] = useState("in/abrar-mohamed-4a45932b1");
   const [website, setWebsite] = useState("https://abrarhosny.vercel.app/");
+  const [personalInfo, setPersonalInfo] = useState({
+    name: "Abrar Hosny",
+    phone: "+01002531133",
+    email: "abrarhosny19@gmail.com",
+    location: "Alexandria,Egypt",
+    github: "https://github.com/Abrar-Hosny",
+    linkedin: "in/abrar-mohamed-4a45932b1",
+    website: "https://abrarhosny.vercel.app/",
+  });
 
   return (
     <>
@@ -28,7 +37,10 @@ export default function Content() {
                   type="text"
                   id="name"
                   value={name}
-                  onChange={(event) => setName(event.target.value)}
+                  onChange={(event) => {
+                    setName(event.target.value);
+                    personalInfo.name = name;
+                  }}
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2"
                   placeholder="Abrar Hosny"
                   required
@@ -45,7 +57,10 @@ export default function Content() {
                   type="text"
                   id="location"
                   value={location}
-                  onChange={(event) => setLocation(event.target.value)}
+                  onChange={(event) => {
+                    setLocation(event.target.value);
+                    personalInfo.location = location;
+                  }}
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2"
                   placeholder="Alexandria, Egypt"
                   required
@@ -65,7 +80,10 @@ export default function Content() {
                   placeholder="+01002531133"
                   value={phone}
                   required
-                  onChange={(event) => setPhone(event.target.value)}
+                  onChange={(event) => {
+                    setPhone(event.target.value);
+                    personalInfo.phone = phone;
+                  }}
                 />
               </div>
               <div className="mb-2">
@@ -82,7 +100,10 @@ export default function Content() {
                   placeholder="abrarhosny@gmil.com"
                   value={email}
                   required
-                  onChange={(event) => setEmail(event.target.value)}
+                  onChange={(event) => {
+                    setEmail(event.target.value);
+                    personalInfo.email = email;
+                  }}
                 />
               </div>
               <div className="mb-2">
@@ -98,7 +119,10 @@ export default function Content() {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2"
                   value={linkedin}
                   required
-                  onChange={(event) => setLinkedin(event.target.value)}
+                  onChange={(event) => {
+                    setLinkedin(event.target.value);
+                    personalInfo.linkedin = linkedin;
+                  }}
                 />
               </div>
 
@@ -115,7 +139,10 @@ export default function Content() {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2"
                   required
                   value={github}
-                  onChange={(event) => setGithub(event.target.value)}
+                  onChange={(event) => {
+                    setGithub(event.target.value);
+                    personalInfo.github = github;
+                  }}
                 />
               </div>
 
@@ -132,7 +159,10 @@ export default function Content() {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2"
                   required
                   value={website}
-                  onChange={(event) => setWebsite(event.target.value)}
+                  onChange={(event) => {
+                    setWebsite(event.target.value);
+                    personalInfo.website = website;
+                  }}
                 />
               </div>
             </div>
@@ -312,7 +342,8 @@ export default function Content() {
             </div>
           </div>
         </div>
-        <Paper personName={name} />
+        {console.log(personalInfo)}
+        <Paper personInfo={personalInfo} />
       </div>
     </>
   );
