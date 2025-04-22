@@ -1,7 +1,15 @@
-import React from "react";
+import  { useState } from "react";
 
 export default function PersonalInfo() {
+  const [schoolName, setschoolName] = useState("")
+  const [schoolStart, setschoolStartDate] = useState("")
+  const [schoolEndDate, setschoolEndDate] = useState("")
+  const [schoolDegree, setschoolDegree] = useState("")
+  const [schoolLocation, setschoolLocation] = useState("")
+  
+  
   return (
+
     <>
       <div>
       <h2 className="font-bold">Education</h2>

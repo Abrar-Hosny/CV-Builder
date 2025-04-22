@@ -8,7 +8,6 @@ import { TfiWorld } from "react-icons/tfi";
 import PersonalInfo from "./PersonalInfo";
 import ProjectSection from "./ProjectSection";
 import TechnicalSkills from "./TechnicalSkills";
-import Content from "./Content";
 
 
 export default function Paper({personInfo}) {
