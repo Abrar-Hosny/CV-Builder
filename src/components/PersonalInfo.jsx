@@ -1,24 +1,25 @@
 import React from "react";
 
-export default function PersonalInfo() {
+export default function PersonalInfo({ education }) {
   return (
-    <>
-      <div>
+    <div className="mt-3">
       <h2 className="font-bold">Education</h2>
       <hr className="border border-black" />
-        <div>
-       
-        <div className="flex justify-between">
-          <h3 className="font-semibold">Pharos University in Alexandria </h3>
-          <p className="font-semibold">Sep. 2021 – May 2025</p>
+      {education?.map((edu, index) => (
+        <div key={index} className="mt-3">
+          <div className="flex flex-wrap justify-between gap-2">
+            <h3 className="font-semibold break-words">{edu.school}</h3>
+            <p className="font-semibold break-words">
+              {new Date(edu.startDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} – 
+              {edu.endDate ? new Date(edu.endDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) : 'Present'}
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-between text-sm italic gap-2">
+            <h3 className="break-words">{edu.degree}</h3>
+            <p className="break-words">{edu.location}</p>
+          </div>
         </div>
-        <div className="flex justify-between  text-sm italic ">
-          <h3 >Bachelor of Science in Computer Science - GPA: 3.85 </h3>
-          <p>Alexandria, Egypt
-          </p>
-        </div>
-        </div>
-      </div>
-    </>
+      ))}
+    </div>
   );
 }
